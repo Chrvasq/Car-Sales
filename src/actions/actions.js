@@ -15,6 +15,10 @@ export const addFeature = newFeature => {
 export const removeFeature = item => {
   return {
     type: REMOVE_FEATURE,
-    payload: item.id
+    payload: {
+      id: item.id,
+      name: item.name,
+      price: item.price
+    }
   };
 };
